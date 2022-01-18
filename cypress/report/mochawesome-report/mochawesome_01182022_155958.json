@@ -1,0 +1,182 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-01-18T09:59:43.146Z",
+    "end": "2022-01-18T09:59:58.953Z",
+    "duration": 15807,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ebc9038e-0769-4520-bcab-45537b06e54e",
+      "title": "",
+      "fullFile": "cypress/integration/MakeAppointment.js",
+      "file": "cypress/integration/MakeAppointment.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1ae501cd-c290-4389-b1f4-592c6d48ebcf",
+          "title": "Cura Healthcare Appointment",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Navigate to the webpage",
+              "fullTitle": "Cura Healthcare Appointment Navigate to the webpage",
+              "timedOut": null,
+              "duration": 8233,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://katalon-demo-cura.herokuapp.com/\");\ncy.log(\"Navigation was successful\");",
+              "err": {},
+              "uuid": "4cc716ea-b328-4e17-afae-fc6981f17fbc",
+              "parentUUID": "1ae501cd-c290-4389-b1f4-592c6d48ebcf",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Click on Make Appointment",
+              "fullTitle": "Cura Healthcare Appointment Click on Make Appointment",
+              "timedOut": null,
+              "duration": 1403,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\"#btn-make-appointment\").click();\ncy.log(\"Clicking on Make Appointent button was successful\");",
+              "err": {},
+              "uuid": "2c1b7336-f179-4e13-b3b1-a243d38542b8",
+              "parentUUID": "1ae501cd-c290-4389-b1f4-592c6d48ebcf",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login",
+              "fullTitle": "Cura Healthcare Appointment Login",
+              "timedOut": null,
+              "duration": 1352,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\"#txt-username\").type(\"John Doe\");\ncy.get(\"#txt-password\").type(\"ThisIsNotAPassword\");\ncy.get(\"#btn-login\").click();\ncy.log(\"Login was successful\");",
+              "err": {},
+              "uuid": "c1ebf8dc-6cf8-4a59-83fc-a781c36724ee",
+              "parentUUID": "1ae501cd-c290-4389-b1f4-592c6d48ebcf",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Make Appointment",
+              "fullTitle": "Cura Healthcare Appointment Make Appointment",
+              "timedOut": null,
+              "duration": 1480,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\"select\").select(1).should(\"have.value\", \"Hongkong CURA Healthcare Center\");\ncy.get('[type=\"checkbox\"]').check();\ncy.get(\"#radio_program_medicaid\").check();\ncy.get(\"#txt_visit_date\").type(\"30.02.2022\");\ncy.get(\"#txt_comment\").click({\n  force: true\n});\ncy.get(\"#txt_comment\").type(\"My appointment is on 30th\");\ncy.get(\"#btn-book-appointment\").click();",
+              "err": {},
+              "uuid": "8c84906b-12f5-464b-8457-f00eccd7b09f",
+              "parentUUID": "1ae501cd-c290-4389-b1f4-592c6d48ebcf",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify Appointment",
+              "fullTitle": "Cura Healthcare Appointment Verify Appointment",
+              "timedOut": null,
+              "duration": 18,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\"h2\").contains(\"Appointment Confirmation\");\ncy.log(\"All Tests are Completed\");",
+              "err": {},
+              "uuid": "706b3186-aa79-4fdc-bd92-77bfd348441d",
+              "parentUUID": "1ae501cd-c290-4389-b1f4-592c6d48ebcf",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4cc716ea-b328-4e17-afae-fc6981f17fbc",
+            "2c1b7336-f179-4e13-b3b1-a243d38542b8",
+            "c1ebf8dc-6cf8-4a59-83fc-a781c36724ee",
+            "8c84906b-12f5-464b-8457-f00eccd7b09f",
+            "706b3186-aa79-4fdc-bd92-77bfd348441d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 12486,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report/mochawesome-report",
+        "overwrite": true,
+        "html": false,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.0.1"
+    }
+  }
+}
